@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flip Card</title>
-    <!--Google Fonts and Icons-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
       rel="stylesheet"
@@ -16,152 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100vh;
-      }
-      .center {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      .book {
-        width: 400px;
-        height: 300px;
-        position: relative;
-      }
-      .pages {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-      .page {
-        width: 380px;
-        height: 270px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 7mm;
-        margin: 0 6px;
-        transform-style: preserve-3d;
-        transform-origin: left;
-        transition: 0.25s;
-        box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.15),
-          1px 3px 1px 0 rgba(0, 0, 0, 0.1);
-      }
-      .page-side {
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        padding: 20px 30px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        font-family: poppins;
-        border-radius: 7mm;
-        position: absolute;
-        top: 0;
-        left: 0;
-        backface-visibility: hidden;
-      }
-      .page-head {
-        width: 100%;
-      }
-      .page-title {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 40px;
-        font-weight: 500;
-      }
-      .page-subtitle {
-        font-size: 16px;
-        font-weight: 300;
-      }
-      .page-content {
-        flex-grow: 1;
-        font-size: 14px;
-        display: flex;
-        align-items: flex-end;
-      }
-      .page-footer {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 15px;
-        font-size: 14px;
-      }
-      .pg-no {
-        width: auto;
-        padding: 0 15px;
-        height: 20px;
-        line-height: 20px;
-        text-align: center;
-        color: rgb(40, 40, 40);
-        background: white;
-        border-radius: 3mm;
-      }
-      .front {
-        background: rgb(255, 228, 130);
-        color: rgb(40, 40, 40);
-        padding-left: 40px;
-      }
-      .back {
-        background: rgb(40, 40, 40);
-        color: white;
-        padding-right: 40px;
-        transform: rotateY(180deg);
-      }
-      .beads {
-        position: absolute;
-        top: 0;
-        left: -12px;
-        height: 270px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        z-index: 9999;
-      }
-      .bead {
-        width: 36px;
-        height: 12px;
-        background: white;
-        border-radius: 5mm;
-        z-index: 9999;
-        box-shadow: inset 1px 2px 0 0 rgba(0, 0, 0, 0.15),
-          inset 1px 3px 1px 0 rgba(0, 0, 0, 0.1);
-      }
-      .controls {
-        width: 350px;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .controls button {
-        background: white;
-        width: 40px;
-        height: 40px;
-        border: 0.4mm solid rgb(40, 40, 40);
-        border-radius: 50%;
-        outline: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="center">
@@ -183,29 +37,10 @@
                 </div>
                 <div class="page-subtitle">Sayanggku💖💖</div>
               </div>
-              <div class="page-content">Dibaca yaa cantikk</div>
+              <div class="page-content">🫶Love you🫶.</div>
               <div class="page-footer">
                 <span>19 April 2025</span>
                 <span class="pg-no">Cover</span>
-              </div>
-            </div>
-
-            <div class="page-side back">
-              <div class="page-head">
-                <div class="page-title">
-                  Dari Cowokmu
-                  <span class="material-icons-outlined">cake</span>
-                </div>
-                <div class="page-subtitle">Byy</div>
-              </div>
-              <div class="page-content">
-                Selamat Ulang tahun yang ke 20 yaaa Cantikk, semoga apa yang
-                byyy inginkan bisa terwujud, Terimakasih yaaa byy telah bertahan
-                dengan aku selama ini semoga kita bisa selalu bersama selamanya.
-              </div>
-              <div class="page-footer">
-                <span>May 2023</span>
-                <span class="pg-no">1</span>
               </div>
             </div>
           </div>
@@ -213,38 +48,57 @@
             <div class="page-side front">
               <div class="page-head">
                 <div class="page-title">
-                  Happy Birthday!
+                  Assalamualaikum
                   <span class="material-icons-outlined"> cake </span>
                 </div>
                 <div class="page-subtitle">Byyy</div>
               </div>
               <div class="page-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                modi temporibus tempora eligendi consectetur harum recusandae
-                rem exercitationem molestias? Dolorum itaque ducimus quam odio
-                unde
+                Dibaca yaaa cantikk, sayanggku, Cintaku
               </div>
               <div class="page-footer">
-                <span>May 2023</span>
+                <span>19 April 2025</span>
+                <span class="pg-no">2</span>
+              </div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-side front">
+              <div class="page-head">
+                <div class="page-title">
+                  Happy Birthday!!
+                  <span class="material-icons-outlined"> cake </span>
+                </div>
+                <div class="page-subtitle">Byyy</div>
+              </div>
+              <div class="page-content">
+                Selamat ulang tahun yaaa cantikk, terimakasih udah mau bertahan
+                sejauh ini semoga kedapanya kita bisa melewati semua tantangan
+                yang ada di dunia ini. Semoga apa yang byy inginkan menjadi
+                kenyataan yaa.
+              </div>
+              <div class="page-footer">
+                <span>19 April 2025</span>
                 <span class="pg-no">3</span>
               </div>
             </div>
-            <div class="page-side back">
+          </div>
+          <div class="page">
+            <div class="page-side front">
               <div class="page-head">
                 <div class="page-title">
-                  Games
-                  <span class="material-icons-outlined"> sports_esports </span>
+                  Pesan!!
+                  <span class="material-icons-outlined"> cake </span>
                 </div>
-                <div class="page-subtitle">Client Name</div>
+                <div class="page-subtitle">Byyy</div>
               </div>
               <div class="page-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                modi temporibus tempora eligendi consectetur harum recusandae
-                rem exercitationem molestias? Dolorum itaque ducimus quam odio
-                unde
+                Aku minta maaf yaaa selama ini masih banyak kurangnya, belum
+                bisa jadi seeorang yang byy inginkan, tapi aku akan terus
+                berusaha jadi yang terbaik buat byyy.
               </div>
               <div class="page-footer">
-                <span>May 2023</span>
+                <span>19 April 2025</span>
                 <span class="pg-no">4</span>
               </div>
             </div>
@@ -253,43 +107,44 @@
             <div class="page-side front">
               <div class="page-head">
                 <div class="page-title">
-                  News
-                  <span class="material-icons-outlined"> feed </span>
+                  Pesan!!
+                  <span class="material-icons-outlined"> cake </span>
                 </div>
-                <div class="page-subtitle">Client Name</div>
+                <div class="page-subtitle">Byyy</div>
               </div>
               <div class="page-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                modi temporibus tempora eligendi consectetur harum recusandae
-                rem exercitationem molestias? Dolorum itaque ducimus quam odio
-                unde
+                Oh iyaa seandainya byy buka kado ini saat aku sudah pulang, aku
+                mau jelasin kalo didalem tas ada sesuatu, buka dulu baru lanjut
+                baca yaa. Gaboleh curang
               </div>
               <div class="page-footer">
-                <span>May 2023</span>
-                <span class="pg-no">5</span>
-              </div>
-            </div>
-            <div class="page-side back">
-              <div class="page-head">
-                <div class="page-title">
-                  Education
-                  <span class="material-icons-outlined"> school </span>
-                </div>
-                <div class="page-subtitle">Client Name</div>
-              </div>
-              <div class="page-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                modi temporibus tempora eligendi consectetur harum recusandae
-                rem exercitationem molestias? Dolorum itaque ducimus quam odio
-                unde
-              </div>
-              <div class="page-footer">
-                <span>May 2023</span>
-                <span class="pg-no">6</span>
+                <span>19 April 2025</span>
+                <span class="pg-no">4</span>
               </div>
             </div>
           </div>
-          <div class="page"></div>
+          <div class="page">
+            <div class="page-side front">
+              <div class="page-head">
+                <div class="page-title">
+                  Pesan!!
+                  <span class="material-icons-outlined"> cake </span>
+                </div>
+                <div class="page-subtitle">Byyy</div>
+              </div>
+              <div class="page-content">
+                Byy liat ada jam tangan sama gelangkan? semoga byy suka yaaa.
+                maksudku memberikan byy gelang sebagai tanda keseriusanku pada
+                byyy. maaf yaaa cuman sebuah gelang, itu tanda kalo aku ngiket
+                byy secara pribadi, semoga dengan cara ini byy percara kalo aku
+                sudah jadikan byyyy sebagai tujuan hidupku
+              </div>
+              <div class="page-footer">
+                <span>19 April 2025</span>
+                <span class="pg-no">4</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="controls">
@@ -301,41 +156,6 @@
         </button>
       </div>
     </div>
-    <script>
-      alert("Hp nya dimiringkan yaaa sayangg");
-      function setIndex() {
-        let pages = document.querySelectorAll(".page");
-        for (var i = 0; i < pages.length; i++) {
-          pages[i].style.zIndex = pages.length - i;
-        }
-      }
-
-      setIndex();
-
-      function previous() {
-        let active = document.querySelector(".active");
-        let prevSib = active.previousElementSibling;
-        active.className = "page";
-        prevSib.className = "page active";
-        setIndex();
-        prevSib.style.transform = "rotateY(0deg)";
-        let prevSib2 = prevSib.previousElementSibling;
-        if (prevSib2 && prevSib2.className == "page") {
-          prevSib2.style.zIndex = "9998";
-        }
-      }
-
-      function next() {
-        let active = document.querySelector(".active");
-        let nextSib = active.nextElementSibling;
-        active.style.transform = "rotateY(180deg)";
-        active.className = "page";
-        setIndex();
-        active.style.zIndex = "9998";
-        if (nextSib) {
-          nextSib.className = "page active";
-        }
-      }
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
